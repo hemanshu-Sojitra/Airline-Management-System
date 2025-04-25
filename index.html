@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Reservation System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(to right, rgba(0, 123, 255, 0.8), rgba(0, 184, 255, 0.8)), url('your-image-url.jpg') center/cover no-repeat;
+        }
+        .form-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        .form-control:focus, .form-select:focus {
+            box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+            border-color: #0d6efd;
+        }
+        .btn-primary {
+            border-radius: 50px;
+            padding: 0.75rem 2rem;
+        }
+        label i {
+            margin-right: 6px;
+            color: #0d6efd;
+        }
+        .card {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 1rem;
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .btn-light {
+            border-radius: 50px;
+            padding: 0.75rem 2rem;
+        }
+        .bg-primary {
+            background-color: #007bff !important;
+        }
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+        footer {
+            background-color: #343a40;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-primary" href="#"><i class="fa-solid fa-plane-departure me-2"></i>Airline Reservations</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold text-primary" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="flight.php">Search Flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="confirmation.php">Confirm Flight</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero text-white text-center py-5 mt-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Welcome to Airline Reservations</h1>
+            <p class="lead mb-4">Your journey starts here with affordable flights to top destinations</p>
+            <a href="flight.php" class="btn btn-light btn-lg mt-4">Search for Flights</a>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light" id="features">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-light rounded p-4 h-100">
+                        <h4 class="mb-3">Best Flight Deals</h4>
+                        <p>Find unbeatable prices on flights to your dream destinations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-light rounded p-4 h-100">
+                        <h4 class="mb-3">Easy Booking</h4>
+                        <p>Book your flights in just a few simple steps online.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-light rounded p-4 h-100">
+                        <h4 class="mb-3">24/7 Customer Support</h4>
+                        <p>Get assistance anytime for all your travel needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light" id="testimonials">
+        <div class="container text-center">
+            <h2 class="mb-4">What Our Customers Say</h2>
+            <p class="lead mb-5">Our travelers love us! Here’s what they have to say:</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-light rounded p-4">
+                        <p class="mb-3">"Booking with Airline Reservations was easy, and the flight was perfect! Highly recommend!"</p>
+                        <h5>- Sarah Williams</h5>
+                        <p><em>Traveler</em></p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-light rounded p-4">
+                        <p class="mb-3">"I found a great deal for my vacation to Paris. The website was user-friendly and the service was excellent!"</p>
+                        <h5>- David Taylor</h5>
+                        <p><em>Traveler</em></p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-light rounded p-4">
+                        <p class="mb-3">"I had an amazing experience flying with Airline Reservations. Will definitely book again!"</p>
+                        <h5>- Emily Harris</h5>
+                        <p><em>Traveler</em></p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-light rounded p-4">
+                        <p class="mb-3">"The booking process was quick, and I was able to get the flight I wanted at a great price!"</p>
+                        <h5>- Michael Green</h5>
+                        <p><em>Traveler</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <p>&copy; 2025 Airline Reservation System. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
